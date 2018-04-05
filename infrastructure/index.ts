@@ -1,5 +1,3 @@
-import AuthApi from "./api/AuthApi";
-
-export {
-    AuthApi
-}
+export * from "./providers";
+export * from "./api";
+export * from "./services";

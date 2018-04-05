@@ -1,5 +1,1 @@
-import AuthResult from "./api/auth/AuthResult";
-
-export {
-    AuthResult,
-}
+export * from "./api";

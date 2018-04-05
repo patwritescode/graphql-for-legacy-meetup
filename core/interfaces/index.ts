@@ -1,6 +1,3 @@
-import IAuthApi, { AuthApiType } from "./api/IAuthApi";
-
-export {
-    IAuthApi,
-    AuthApiType
-}
+export * from "./api";
+export * from "./services";
+export * from "./providers";
