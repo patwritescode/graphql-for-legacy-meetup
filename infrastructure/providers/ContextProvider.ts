@@ -1,10 +1,10 @@
-import { IContextProvider, AuthServiceType, IAuthService } from "../../core";
+import { IContextProvider, IProductServiceType, IProductService } from "../../core";
 import { injectable, inject } from "inversify";
 
 @injectable()
 class ContextProvider implements IContextProvider {
-    @inject(AuthServiceType)
-    public readonly authService: IAuthService;
+    @inject(IProductServiceType)
+    public readonly productService: IProductService;
 }
 
 export default ContextProvider;

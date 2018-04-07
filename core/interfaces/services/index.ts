@@ -1,2 +1,6 @@
-export * from "./IAuthService";
-export * from "./IPurchaseService";
+import IProductService, { IProductServiceType } from "./IProductService";
+
+export {
+    IProductService,
+    IProductServiceType
+}

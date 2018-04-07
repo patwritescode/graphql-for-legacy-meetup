@@ -1,4 +1,0 @@
-type Auth {
-    token: String
-    expires: String
-}

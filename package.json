@@ -2,7 +2,7 @@
   "name": "graphql-for-legacy-meetup",
   "version": "1.0.0",
   "scripts": {
-    "dev": "ts-node server.ts --typeCheck"
+    "dev": "ts-node ./startup/server.ts --typeCheck"
   },
   "repository": {
     "type": "git",

@@ -1,9 +1,9 @@
-import AuthApi from "./AuthApi";
-import PurchaseApi from "./PurchaseApi";
-import UserApi from "./UserApi";
+import CMSApi from "./CMSApi";
+import OrderApi from "./OrderApi";
+import WebApi from "./WebApi";
 
 export {
-    AuthApi,
-    PurchaseApi,
-    UserApi
+    CMSApi,
+    OrderApi,
+    WebApi,
 }

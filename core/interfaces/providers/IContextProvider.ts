@@ -1,7 +1,8 @@
-import { IAuthService, IPurchaseService } from "../services";
+import { IProductService} from "../services";
 
-export const ContextProviderType = Symbol.for("IContextProvider");
-export interface IContextProvider {
-    authService: IAuthService;
-    purchaseService: IPurchaseService;
+export const IContextProviderType = Symbol.for("IContextProvider");
+interface IContextProvider {
+    productService: IProductService;
 }
+
+export default IContextProvider;

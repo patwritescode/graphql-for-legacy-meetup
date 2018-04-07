@@ -1,9 +1,11 @@
+import "reflect-metadata";
 import express from "express";
 import bodyParser from "body-parser";
 import cors from "cors";
 import { graphqlExpress, graphiqlExpress } from "apollo-server-express";
 import container from "./container";
-import { ContextProviderType, IContextProvider } from "../core";
+import { IContextProviderType, IContextProvider } from "../core";
+import schema from "../schema";
 
 const app = express();
 app.use(
@@ -11,9 +13,9 @@ app.use(
     cors(),
     bodyParser.json(),
     graphqlExpress((req) => ({
-        schema: null,
+        schema,
         context:  () => {
-            return container.get<IContextProvider>(ContextProviderType);
+            return container.get<IContextProvider>(IContextProviderType);
         }
     }))
 );
