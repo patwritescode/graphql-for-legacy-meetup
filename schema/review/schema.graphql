@@ -1,0 +1,5 @@
+type Review {
+    name: String
+    description: String
+    rating: Int
+}

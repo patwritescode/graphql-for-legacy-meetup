@@ -1,4 +1,4 @@
-import { IWebApi, UserAuthentication, ProductInventory, User } from "../../core";
+import { IWebApi, ProductInventory, User } from "../../core";
 import { injectable } from "inversify";
 
 @injectable()
@@ -24,13 +24,6 @@ class WebApi implements IWebApi {
             email: "test@test.com",
             username: "test"
         });
-    }
-    async login(username: string, password: string): Promise<UserAuthentication> {
-        return Promise.resolve({
-            token: "test_token",
-            expires: null,
-            user: await this.fetchUser(1)
-        })
     }
 }
 

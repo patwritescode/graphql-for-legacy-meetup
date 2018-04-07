@@ -4,4 +4,6 @@ type Product {
     price: Float
     description: String
     details: String
+    rating: Float
+    reviews: [Review]
 }

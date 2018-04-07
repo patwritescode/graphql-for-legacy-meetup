@@ -1,4 +1,5 @@
 # import Product from "../product/schema.graphql"
+# import Review from "../review/schema.graphql"
 
 type Query {
     product(id: Int!): Product

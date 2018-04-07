@@ -19,6 +19,12 @@ export default {
             return context.productService
                 .fetchDetails(parent.productId)
                 .then(result => result !== null ? result.details : null);
+        },
+        rating: async (parent: ProductInventory, args, context: IContextProvider) => {
+            return context.productService.fetchRating(parent.productId);
+        },
+        reviews: async (parent: ProductInventory, args, context: IContextProvider) => {
+            return context.productService.fetchReviews(parent.productId);
         }
     }
 }
